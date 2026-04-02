@@ -402,7 +402,7 @@ async function pollRSS(env) {
   const token = env.TELEGRAM_BOT_TOKEN;
   const uid = parseInt(env.ALLOWED_USER_ID, 10);
   const MAX_NOTIF = 10;
-  const FAIL_THRESHOLD = 3;
+  const FAIL_THRESHOLD = 30;
 
   await initDB(db);
 
